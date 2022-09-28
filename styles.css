@@ -1,0 +1,243 @@
+/* ENTIRE PAGE  */
+:root{
+  --main-blue: #45567d;
+  --main-grey: #303841;
+}
+*{
+  padding: 0;
+  margin: 0;
+  position: relative;
+  box-sizing: inherit;
+  font-family: Arial;
+}
+
+
+
+/* NAV BAR  */
+nav{
+display: flex;
+justify-content: flex-end;
+top: 0;
+left: 0;
+position: fixed;
+background-color: red;
+width: 100%;
+z-index: 10;
+box-shadow: 0 2px 0 rgb(0 0 0 / 40%);
+padding-top: 20px; 
+padding-bottom: 20px;
+
+}
+
+.nav-list{
+  display: flex;
+  list-style: none;
+  margin-right: 2rem;
+  
+}
+
+li{
+  padding-left: 2rem;
+
+}
+
+a{
+  text-decoration: none;
+color: white;
+font-weight: 600;
+}
+
+/* HERO BANNER  */
+.hero{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+padding-top: 6rem;
+padding-bottom: 6rem;
+text-align: center;
+background-image: linear-gradient(
+  40deg,
+  #3a3d40 0%,
+  #181719 100%
+);
+height: 50%;
+}
+
+.introduction{
+  color: white;
+}
+
+.job{
+  color: red;
+}
+
+
+
+/* MY PROJECTS  */
+
+.title-of-project{
+  padding-top: 10px;
+  
+}
+
+#projects{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+padding-top: 3rem;
+  color: white;
+  background: var(--main-blue);
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden
+}
+
+.section-title{
+  border-bottom: 1px white solid;
+  padding-bottom: 5px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;         
+}
+
+
+h1{
+  max-width: 640px;
+  margin: 0 auto 6rem auto;
+}
+
+.project-grid{
+  display: grid;      
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 4rem;
+  overflow-wrap: normal;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding-right:10rem;
+  padding-left: 10rem;
+  overflow-x: hidden
+}
+
+.project-tile{
+background-color:var(--main-grey);
+padding-bottom: 30px;
+padding-top: 0px;
+cursor: pointer;
+}
+
+
+
+img{
+  display: block;
+  object-fit: cover;
+  height: 90%;
+  width: 100%;
+}
+
+
+
+.icon.show{
+  height: 20px;
+  color: white;
+}
+
+.show-text{
+  font-weight: 600;
+  font-size: 20px;
+  background-color: black;
+  width: 20rem;
+  height: 50px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
+  
+}
+
+.show-container{
+  padding-top: 100px;
+  padding-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  text-align: center; 
+  justify-content: center;
+  grid-column: 2;
+  
+}
+
+/* CONTACT ME  */
+ion-icon{
+  height: 50px;
+  width: 50px;
+  padding: 10px;
+  display: flex;
+  color: white !important;
+  line-height: 1;
+}
+
+
+
+.contact{
+  line-height: 4;
+  background-color: var(--main-grey);
+  padding-left:5rem;
+  padding-right: 5rem;
+  padding-bottom: 5rem;
+  padding-top: 5rem;
+  border-bottom: 2px red solid;
+
+}
+
+.contact-links{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  
+}
+
+/* FOOTER  */
+
+.left-and-right{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+/* media query for grid mobile */
+@media screen and (max-width: 900px) {
+  #navbar{
+    background-color: olive;
+  }
+
+  #projects{
+    width: 100%;
+    max-width: 100%;
+    background-color: orange;
+    overflow-x: hidden;
+    margin: 20px;
+    padding-left: 0px;
+  }
+
+  .project-grid{
+  display: grid;      
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  grid-gap: 4rem;
+  overflow-wrap: normal;
+  max-width: 1000px;
+  width: 50%;
+  margin: 0 auto;
+  padding-right:10rem;
+  padding-left: 10rem;
+  overflow-x: hidden
+}
+
+.show-text{
+  max-width: 100%;
+  grid-column: 1 / 2;
+}
+
+  
+}
